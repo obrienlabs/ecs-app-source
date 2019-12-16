@@ -1,0 +1,5 @@
+# Issue: sh scripts that are run inside docker containers like filebeat.sh must be LF not CR/LF in order to execute
+# The file will only come in as LF if your global .gitconfig is set to autocrlf=false (it is usually true)
+# ref:
+# See https://help.github.com/articles/dealing-with-line-endings/
+*.sh text eol=lf
